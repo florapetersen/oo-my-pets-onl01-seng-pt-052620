@@ -36,5 +36,6 @@ class Owner
 
   def buy_cat #can buy an instance of the Cat class. Take a cat instance and assign it to self?
     Cat.owner == self
+  end
 
 end
