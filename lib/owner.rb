@@ -33,4 +33,8 @@ class Owner
   def dogs #returns collection of all dogs belonging to the owner
     Dog.all.select {|dog| dog.owner == self}
   end
+
+  def buy_cat #can buy an instance of the Cat class. Take a cat instance and assign it to self?
+    Cat.owner == self
+
 end
