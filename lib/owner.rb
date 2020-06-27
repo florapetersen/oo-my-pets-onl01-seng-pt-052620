@@ -35,8 +35,7 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.new =  #can buy an instance of the Cat class. Take a cat instance and assign it to self?
-    cat.owner = self
+    Cat.new(name, self)  #can buy an instance of the Cat class. Take a cat instance and assign it to self?
   end
 
 end
