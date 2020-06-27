@@ -42,4 +42,8 @@ class Owner
     Dog.new(name, self)
   end
 
+  def walk_dogs #walks the dogs, makes dogs' mood happy
+    
+  end
+
 end
