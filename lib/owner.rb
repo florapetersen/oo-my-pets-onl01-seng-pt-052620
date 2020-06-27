@@ -43,11 +43,7 @@ class Owner
   end
 
   def walk_dogs #walks the dogs, makes dogs' mood happy
-    Dog.all.each |dog|
-      if dog.owner == self
-        dog.mood = "happy"
-      end
-    end
+    Dog.all.each {|dog| dog.mood = "happy" if dog.owner == self}
   end
 
 
