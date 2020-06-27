@@ -50,6 +50,11 @@ class Owner
     Cat.all.each {|cat| cat.mood = "happy" if cat.owner == self}
   end
 
+  def sell_pets
+    Cat.all.each {|cat| cat.mood = "nervous" if cat.owner == self}
+    Dog.all.each {|dog| dog.mood = "nervous" if dog.owner == self}
+  end
+
 
 
 end
