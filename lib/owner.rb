@@ -34,8 +34,12 @@ class Owner
     Dog.all.select {|dog| dog.owner == self}
   end
 
-  def buy_cat(name)
-    Cat.new(name, self)  #can buy an instance of the Cat class. Take a cat instance and assign it to self?
+  def buy_cat(name) #buy an instance of the Cat class
+    Cat.new(name, self) #initializes a new instance of Cat, where the cat's name = name and the owner is self
+  end
+
+  def buy_dog(name)
+    Dog.new(name, self)
   end
 
 end
