@@ -26,6 +26,6 @@ class Owner
   end
 
   def cats #returns collection of all cats belonging to the owner
-    Cat.all
+    Cat.all.each do {|cat| cat.owner == self}
   end
 end
