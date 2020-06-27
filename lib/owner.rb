@@ -24,4 +24,6 @@ class Owner
   def self.reset_all #resets the owners that have been created, @@all is empty
     @@all = []
   end
+
+  def cats #returns collection of all cats belonging to the owner 
 end
