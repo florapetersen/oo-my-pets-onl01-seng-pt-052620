@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_reader :name, :species #you can only read this, can't set it, so it can't change
 
@@ -65,6 +66,7 @@ class Owner
     end
 
     def list_pets
+      binding.pry
       puts "I have #{self.dog.count} dogs and #{self.cat.count} cats."
     end
   end
