@@ -63,6 +63,9 @@ class Owner
         dog.owner = nil
       end
     end
+
+    def list_pets
+      puts "I have "
   end
 
 
