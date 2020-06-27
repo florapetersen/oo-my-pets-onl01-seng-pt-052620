@@ -26,6 +26,6 @@ class Owner
   end
 
   def cats #returns collection of all cats belonging to the owner
-    self.cats
+    Cats.all
   end
 end
